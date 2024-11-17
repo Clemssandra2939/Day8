@@ -21,12 +21,12 @@
 #     Finally do this with something
 
 # Function that allows for input
-# 
-def greet_with_name (name):
-    print(f"Hello {name}")
-    print(f"How do you do {name}")
+# # 
+# def greet_with_name (name):
+#     print(f"Hello {name}")
+#     print(f"How do you do {name}")
 
-greet_with_name("Sandra")
+# greet_with_name("Sandra")
 
 # when you run it :Hello Sandra
 # How do you do Sandra
@@ -37,8 +37,10 @@ greet_with_name("Sandra")
 # name = Sandra
 
 # Parameter and Argument
-here name is the parameter while Arg
+# here name is the parameter while Sandra is Argument 
 
+# Argument  are actually piece of data carried out or passed over to this function
+# Parameter is the name of the data
      
 
 
