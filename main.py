@@ -37,7 +37,7 @@ greet_with_name("Sandra")
 # name = Sandra
 
 # Parameter and Argument
-here name is the parameter 
+here name is the parameter while Arg
 
      
 
