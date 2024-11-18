@@ -1,0 +1,1 @@
+# Function that allows multiple input
