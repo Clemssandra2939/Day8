@@ -16,9 +16,22 @@
 # test_w = 9
 
 # Example Output:
-# You'll need 6 can of paint.
+# You'll need 5 can of paint.
 
 # Hint:
 # To round up the number_of_can
 # Make sure you name your function/parameters the same as when it's called on the last line of code 
 
+# to round a float or decimal number to a whole number or an integer
+# print(round(8/3))
+
+
+
+test_h = int(input("Height of wall: "))
+test_w = int(input("Width of wall: "))
+coverage = 5
+
+def paint_calc(height,width,cover):
+
+
+paint_calc(height =test_h, width = test_w, cover = coverage) #call function
