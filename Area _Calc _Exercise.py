@@ -23,15 +23,20 @@
 # Make sure you name your function/parameters the same as when it's called on the last line of code 
 
 # to round a float or decimal number to a whole number or an integer
-# print(round(8/3))
+# 
+
+# How to round number:import math
+#                     math.ceil()
 
 
-
+import math
 test_h = int(input("Height of wall: "))
 test_w = int(input("Width of wall: "))
 coverage = 5
 
 def paint_calc(height,width,cover):
+    number_of_cans =math.ceil(test_h * test_w ) / coverage
+    print(f"You'll need {number_of_cans} can of paint.")
 
 
 paint_calc(height =test_h, width = test_w, cover = coverage) #call function
