@@ -93,6 +93,8 @@ print(f"Each person should pay:{result}$")
 #     print(f"{year} is not leap year")
 
 
+
+
 # Password Generator Program
 import random
 letters =['a','b','c','d','e','f','g','h','i','j','k','l','m',
