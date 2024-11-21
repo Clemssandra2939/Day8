@@ -73,3 +73,21 @@ print(f"Each person should pay:{result}$")
 # if the bill was 150.00,split btw 7 people,with 12% tip.
 # Each person should pay(150.00/5)*0.12
 # Round up to two decimal places
+
+
+
+
+
+# year=int(input("which year do u want to check? "))
+# if year % 4==0:
+#     if year % 100==0:
+
+#         if year % 400==0:
+#             print(f"{year} is leap year")
+#         else: 
+#             print(f"{year} is not leap year")
+#     else:
+#         print(f"{year} is leap year")
+
+# else:
+#     print(f"{year} is not leap year")
