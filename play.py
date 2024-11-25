@@ -226,3 +226,39 @@ while not Game_Over :
     from hangman_art import stages
     print(stages[lives])
    
+# Nested if/ else statement
+# if conditon:
+#     if another codition:
+#        do this
+#     else:
+#         do this
+# else:
+#     do this        
+
+# # Roller coaster program
+# print("print(f"Your love score is {love_score}")welcome to the rollercoaster!")
+# height=int(input("what is ur height in cm?"))
+
+# if height > 120:
+#     print("u can ride the rollercoaster!")
+#     age=int(input("what is ur age?"))
+
+#     if age < 12:
+#       print("pay 5$")
+#     elif age <= 18:
+#         print("Pay 7$")
+#     else:
+#        print("Pay 12$")
+# else:
+#   print("Sorry,u have to grow taller before u can ride.")
+
+#   here if they are below 12 they pay 5$ 
+# if they are 12 to 18 they pay $7 buh if they greater than 18 they pay adult price 12$
+
+# this where elif comes,it comes btw any if and else statement
+# if condition1:
+#     do A
+# elif conditon2:
+#     do B
+# else:
+#     do this
