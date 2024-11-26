@@ -19,13 +19,12 @@ def encrypt (plain_text,shift_amount):
 
 # TODO-1- Create a different function called 'decrypt' that takes the 'text' and 
 # 'shift' as inputs.
-def decrypt (plain_text,shift_amount):
+def decrypt (cipher_text,shift_amount):
     decode_text = ""
-    for letter in plain_text:
+    for letter in cipher_text:
         position = alphabet.index(letter)  # list_name . index(wat is the position of wat you are looking for the list) 
-        new_position = position - shift_amount
-        new_letter = alphabet[new_position]
-        decode_text -= new_letter
+        new_position = (position - shift_amount)
+        decode_text += alphabet[new_position]
     print(f"The decoded text is {decode_text}")
 # TODO-2- Inside the 'decrypt' function,shift each letter of the 'text' *backwards*
 # in the alphabetby the shift amount and print the decrypted text 
@@ -37,6 +36,14 @@ def decrypt (plain_text,shift_amount):
 
 # TODO-3- Check if the user wanted to encrypt or decrypt the messages by checking the 'direction' variable,Then call the correct function based on that 
 # 'direction'variable .You should be able to text the code to encrypt*AND* decrypt a message.
-if direction == encrypt:
-    print
+if direction == "encode":
+    encrypt(plain_text = text,shift_amount = shift)
+
+elif direction == "decode":
+    decrypt(cipher_text = text,shift_amount = shift)
+
+
+
+    
+
 
