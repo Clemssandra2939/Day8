@@ -26,3 +26,11 @@ def decrypt (cipher_text,shift_amount):
         new_position = (position - shift_amount)
         decode_text += alphabet[new_position]
     print(f"The decoded text is {decode_text}")
+
+if direction == "encode":
+    encrypt(plain_text = text,shift_amount = shift)
+
+elif direction == "decode":
+    decrypt(cipher_text = text,shift_amount = shift)
+
+# TODO-2- Call the caesar() function,passing over thwe
