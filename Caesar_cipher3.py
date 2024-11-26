@@ -18,3 +18,11 @@ def encrypt (plain_text,shift_amount):
         new_letter = alphabet[new_position]
         cipher_text += new_letter
     print(f"The encoded text is {cipher_text}")
+
+def decrypt (cipher_text,shift_amount):
+    decode_text = ""
+    for letter in cipher_text:
+        position = alphabet.index(letter)  # list_name . index(wat is the position of wat you are looking for the list) 
+        new_position = (position - shift_amount)
+        decode_text += alphabet[new_position]
+    print(f"The decoded text is {decode_text}")
