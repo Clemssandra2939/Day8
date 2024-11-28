@@ -10,27 +10,16 @@ shift =int(input("Type the shift number :\n"))
 
 # TODO -1: Combine the encrypt() and decrypt() function into a single function called caesar()
 
-def encrypt (plain_text,shift_amount):
-    cipher_text = ""
-    for letter in plain_text:
-        position = alphabet.index(letter)  # list_name . index(wat is the position of wat you are looking for the list) 
-        new_position = position + shift_amount
-        new_letter = alphabet[new_position]
-        cipher_text += new_letter
-    print(f"The encoded text is {cipher_text}")
+def caesar(start_text,shift_amount,cipher_direction):
+    end_text = "" #for the start_text
+    for letter in end_text:
+        position = alphabet.index(letter)  # list_name . index(wat is the position of wat you are looking for the list)
+        if cipher_direction == "encode":
+            shift_amount *= -1     #*= was used to join the two function(the encode =,decode -)
+            new_position = position + shift_amount
+            end_text += alphabet[new_position]
+    print(f"The {cipher_direction}d text is {end_text}") # {}d means dynamic to combine two functions.     
+  
 
-def decrypt (cipher_text,shift_amount):
-    decode_text = ""
-    for letter in cipher_text:
-        position = alphabet.index(letter)  # list_name . index(wat is the position of wat you are looking for the list) 
-        new_position = (position - shift_amount)
-        decode_text += alphabet[new_position]
-    print(f"The decoded text is {decode_text}")
-
-if direction == "encode":
-    encrypt(plain_text = text,shift_amount = shift)
-
-elif direction == "decode":
-    decrypt(cipher_text = text,shift_amount = shift)
-
-# TODO-2- Call the caesar() function,passing over thwe
+# TODO-2- Call the caesar() function,passing over the 'text','shift' and 'direction'values.
+caesar(start_text=text,shift_amount=shift,cipher_direction=direction)
