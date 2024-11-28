@@ -14,7 +14,7 @@ def caesar(start_text,shift_amount,cipher_direction):
     end_text = "" #for the start_text
     for letter in end_text:
         position = alphabet.index(letter)  # list_name . index(wat is the position of wat you are looking for the list)
-        if cipher_direction == "encode":
+        if cipher_direction == "decode":
             shift_amount *= -1     #*= was used to join the two function(the encode =,decode -)
             new_position = position + shift_amount
             end_text += alphabet[new_position]
